@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import {PostDetails} from "../PostDetails/PostDetails";
 
 const Post = ({post}) => {
