@@ -46,7 +46,7 @@ const CarForm = () => {
                 <label>brand:<input type="text" placeholder={'brand'} {...register('brand')}/></label>
                 <label>price:<input type="text" placeholder={'price'} {...register('price')}/></label>
                 <label>year:<input type="text" placeholder={'year'} {...register('year')}/></label>
-                <button>{!setCarForUpdate ? "save" : "update"}</button>
+                <button>{!carForUpdate?'save':'update'}</button>
             </form>
             {error && <div>{JSON.stringify(error)}</div>}
         </div>
